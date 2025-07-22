@@ -10,6 +10,7 @@ Objective: To predict whether a customer will churn (leave the service) based on
 Whether you’re a data science enthusiast, recruiter, or fellow developer — this walkthrough shows how I went from raw simulated data to actionable dashboards in a real-time system.
 
  Project Roadmap
+ 
 🏁 Phase 1: Data Understanding & Collection
   I started by thinking through: What kind of customer behaviors actually matter?
 
