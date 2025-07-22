@@ -7,7 +7,7 @@ This project walks through everything — from collecting the data, streaming it
 
 ---
 
-## 🚀 What’s This Project About?
+##  What’s This Project About?
 
 **Objective**: To predict whether a customer will churn (leave the service) based on their behavior like clicks, purchases, login activity, feedback, etc.
 
@@ -17,7 +17,7 @@ Whether you’re a data science enthusiast, recruiter, or fellow developer — t
 
 ## 📌 Project Roadmap
 
-### 🏁 Phase 1: Data Understanding & Collection
+###  Phase 1: Data Understanding & Collection
 - I started by thinking through: *What kind of customer behaviors actually matter?*
 - This included data like:
   - Click counts
@@ -27,20 +27,20 @@ Whether you’re a data science enthusiast, recruiter, or fellow developer — t
   - Feedback scores
 - Since real-time customer data wasn’t available, I **created dummy data manually** and saved it as a CSV.
 
-### 🔄 Phase 2: Real-Time Data Ingestion
+###  Phase 2: Real-Time Data Ingestion
 - To simulate real-time behavior, I used **Apache Kafka**.
 - The CSV from Phase 1 acted as input.
 - Wrote a **Kafka Producer** to stream the rows one by one.
 - A **Kafka Consumer** captured the data and stored it in **MongoDB** — our centralized NoSQL database.
 
-### 🧠 Phase 3: Churn Prediction Model
+###  Phase 3: Churn Prediction Model
 - Once the data was in MongoDB, I built a **machine learning classification model**.
 - The model predicts:
   - `1` → The customer is likely to **churn**
   - `0` → The customer is likely to **stay**
 - The model was trained using **behavioral features** from MongoDB.
 
-### 🌐 Phase 4: Model API Deployment
+###  Phase 4: Model API Deployment
 - I wanted the model to serve predictions in real time.
 - So I created an **API using Flask**, and exposed it publicly using **Ngrok**.
 - Here's what happens:
@@ -49,18 +49,18 @@ Whether you’re a data science enthusiast, recruiter, or fellow developer — t
   - Saves the results into a new **CSV file**.
   - Automatically uploads the CSV to **Google Drive** for dashboard use.
 
-### 📊 Phase 5: Power BI Dashboard
+###  Phase 5: Power BI Dashboard
 - This phase turned raw predictions into **interactive dashboards**.
 - Power BI is connected directly to the Google Drive CSV.
 - The moment new predictions are uploaded, you just need to **hit the refresh button**, and voilà — the dashboard updates!
 - This setup lets me track churn data **hourly, daily, or on demand**.
 
-### 🧹 Phase 6: Advanced Cleaning, EDA & Final Dashboards
+###  Phase 6: Advanced Cleaning, EDA & Final Dashboards
 - I pulled all data from MongoDB locally for a deep-dive.
 - Cleaned the data, performed **EDA (Exploratory Data Analysis)** and aggregated key metrics.
 - Then, I created **4 Power BI dashboards**:
 
-#### 🧾 Dashboard Highlights:
+####  Dashboard Highlights:
 1. **Customer Dashboard** – Overview of customer base and demographics.
 2. **Revenue & Purchase Dashboard** – Tracks income and buying behavior.
 3. **Engagement & Activity Dashboard** – Analyzes usage patterns.
