@@ -11,19 +11,19 @@ Whether you’re a data science enthusiast, recruiter, or fellow developer — t
 
  Project Roadmap
 🏁 Phase 1: Data Understanding & Collection
-I started by thinking through: What kind of customer behaviors actually matter?
+  I started by thinking through: What kind of customer behaviors actually matter?
 
-This included data like:
+  This included data like:
 
-Click counts
+   Click counts
 
-Purchase history
+   Purchase history
 
-Session duration
+   Session duration
 
-Support tickets
+   Support tickets
 
-Feedback scores
+   Feedback scores
 
 Since real-time customer data wasn’t available, I created dummy data manually and saved it as a CSV.
 
